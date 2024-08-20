@@ -1,0 +1,15 @@
+# Exclude All
+/*
+
+# Explicit includes
+!.github
+!doc
+!templates
+!.editorconfig
+!.gitattributes
+!.gitignore
+!Makefile
+!README.md
+
+# Artifacts
+.DS_Store

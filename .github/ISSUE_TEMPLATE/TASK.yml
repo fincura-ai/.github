@@ -1,0 +1,25 @@
+name: "⚙️ Task"
+description: Unit task issue that should be linked to a tracked product feature/bug.
+#title: ""
+labels: [
+  "kind/task ⚙️",
+]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        :warning: This issue **MUST** be tracked by a higher order [Backlog issue](https://github.com/fincura-ai/backlog/issues)
+
+        _In fact, you should probably create a feature/bug first in the roadmap instead of making a standalone task directly with this template._
+
+        ---
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Describe the task specific to this repository.
+      placeholder: Task details
+    validations:
+      required: true
