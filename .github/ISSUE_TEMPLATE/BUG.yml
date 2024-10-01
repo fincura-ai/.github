@@ -1,0 +1,38 @@
+name: "🐛 Bug Report"
+description: Create a new bug report.
+#title: ""
+labels: [
+  "triage/new 🆕",
+]
+type: bug
+projects: ["fincura-ai/1"]
+body:
+  - type: dropdown
+    id: emergency
+    attributes:
+      label: "Emergency Level"
+      description: How much impactful is the bug for the production ?
+      multiple: false
+      options:
+        - 1/ Critical (immediate response, prod is broken)
+        - 2/ Problematic (can be delayed for a few days)
+        - 3/ Annoying (can live with it for a while)
+        - 4/ Unnoticed (should probably be fixed at some point)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Describe precisely what's happening, please include logs, screenshots, etc.
+      placeholder: Short and explicit description of your incident
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior"
+      description: Describe what would be the right behavior.
+      placeholder: Clear and concise description
+    validations:
+      required: true

@@ -2,8 +2,10 @@ name: "⚙️ Task"
 description: Unit task issue that should be linked to a tracked product feature/bug.
 #title: ""
 labels: [
-  "kind/task ⚙️",
+  "triage/new 🆕",
 ]
+type: task
+projects: ["fincura-ai/1"]
 body:
   - type: markdown
     attributes:
